@@ -1,0 +1,18 @@
+here i have mentioned steps for creating first spring application
+
+step1:create java project
+step2:Add required jar files 
+step3:create a bean  class containing the name property only.
+step4:configure applicationContext.xml 
+The bean element is used to define the bean for the given class.
+The property subelement of bean specifies the property of the Student class named name.
+The value specified in the property element will be set in the Student class object by the IOC container.
+step5:create Test class for testing springApplication here im using ioc container(BeanFactory)
+The Resource object represents the information of applicationContext.xml file.
+The Resource is the interface and the ClassPathResource is the implementation class of the Reource interface.
+The BeanFactory is responsible to return the bean. 
+The XmlBeanFactory is the implementation class of the BeanFactory. 
+There are many methods in the BeanFactory interface. One method is getBean(), 
+which returns the object of the associated class.
+
+in further projects lets discuss about ioc container more deeply
