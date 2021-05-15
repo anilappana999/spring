@@ -1,0 +1,2 @@
+We can inject the dependency by setter method also. The <property> subelement of <bean> is used for setter injection
+here i justed created a sample project for setter injection for creating a idea on it
