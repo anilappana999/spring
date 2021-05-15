@@ -1,0 +1,9 @@
+Autowiring feature of spring framework enables you to inject the object dependency implicitly.
+ It internally uses setter or constructor injection.
+ here we are discusing about autowireByName
+In case of constructor autowiring mode, spring container injects the dependency by highest parameterized constructor.
+
+If you have 3 constructors in a class, zero-arg, one-arg and two-arg then injection will be performed by calling the two-arg constructor.
+
+<bean id="b" class="org.sssit.B"></bean>  
+<bean id="a" class="org.sssit.A" autowire="constructor"></bean>  
