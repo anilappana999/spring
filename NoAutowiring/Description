@@ -1,0 +1,12 @@
+Autowiring feature of spring framework enables you to inject the object dependency implicitly.
+ It internally uses setter or constructor injection.
+ here we are discusing about autowireByName
+ byType autowiring mode
+In case of byType autowiring mode, bean id and reference name may be different. But there must be only one bean of a type.
+
+It internally uses setter injection.
+
+<bean id="b1" class="org.sssit.B"></bean>  
+<bean id="a" class="org.sssit.A" autowire="byType"></bean> 
+
+//we will get some exception here (org.springframework.beans.factory.BeanCreationException:)
